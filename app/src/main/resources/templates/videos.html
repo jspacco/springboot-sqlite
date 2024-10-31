@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Video List</title>
+</head>
+<body>
+    <h1>Videos</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Uploader</th>
+        </tr>
+        <tr th:each="video : ${videos}">
+            <td th:text="${video.vID}"></td>
+            <td th:text="${video.title}"></td>
+            <td th:text="${video.year}"></td>
+            <td th:text="${video.uploader}"></td>
+        </tr>
+    </table>
+</body>
+</html>
