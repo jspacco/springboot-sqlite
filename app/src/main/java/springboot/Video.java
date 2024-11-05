@@ -13,7 +13,7 @@ public class Video {
     @Id
     private Integer vID;
     private String title;
-    private int year;
+    private Integer year;
     private String uploader;
 
     // Maps to the `video` field in Rating
@@ -36,7 +36,7 @@ public class Video {
     public void setYear(int year) {
         this.year = year;
     }
-    public int getYear() {
+    public Integer getYear() {
         return year;
     }
     public void setUploader(String uploader) {
